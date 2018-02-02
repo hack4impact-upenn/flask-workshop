@@ -1,5 +1,5 @@
 # FemmeHacks Flask Workshop
-Led by Katie Jiang & Aruna Prasad from <img src="/images/hack4impact.png" alt="Hack4Impact Logo" style="height: 24px">
+Led by Katie Jiang & Aruna Prasad from Hack4Impact.
 
 ## About
 A simple Flask application with routing and Jinja templates.
