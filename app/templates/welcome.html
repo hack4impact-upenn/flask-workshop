@@ -1,0 +1,15 @@
+<html>
+<p>Welcome {{ name }}!</p>
+<p>
+  You rated this workshop as a {{ rating }}.
+</p>
+<p>
+  {% if rating >= 4 %}
+    Awesome! I'm glad you're enjoying this workshop!
+  {% elif rating <= 2 %}
+    Oh no! Sorry to hear you didn't find this helpful.
+  {% else %}
+    That's a so-so rating. Let us know how we can improve!
+  {% endif %}
+</p>
+</html>
