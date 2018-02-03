@@ -12,6 +12,14 @@ A simple Flask application with routing and Jinja templates.
 $ git clone http://github.com/hack4impact/femmehacks-flask-workshop.git
 $ cd femmehacks-flask-workshop
 ```
+If you do not have git installed on your computer, you can also download the .zip file.
+
+### Install Python
+[Tutorial](http://docs.python-guide.org/en/latest/starting/installation/)
+
+### Install Pip
+If you do not have pip already installed on your computer, follow [this tutorial](https://pip.pypa.io/en/stable/installing/) to install pip.
+
 ### Install a virtual environment
 ```sh
 $ pip install virtualenv
