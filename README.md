@@ -16,6 +16,8 @@ If you do not have git installed on your computer, you can also download the .zi
 
 ### Install Python
 [Tutorial](http://docs.python-guide.org/en/latest/starting/installation/)
+[Another tutorial](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html)
+[Modifying your PATH environment variable](https://www.java.com/en/download/help/path.xml)
 
 ### Install Pip
 If you do not have pip already installed on your computer, follow [this tutorial](https://pip.pypa.io/en/stable/installing/) to install pip.
