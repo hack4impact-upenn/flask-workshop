@@ -25,8 +25,8 @@ If you do not have pip already installed on your computer, follow [this tutorial
 ### Install a virtual environment
 ```sh
 $ pip install virtualenv
-$ virtualenv env
-$ source env/bin/activate
+$ virtualenv -p python3 venv
+$ source venv/bin/activate
 ```
 
 ### Install dependencies
@@ -36,7 +36,7 @@ $ pip install -r requirements.txt
 
 ## Running the application
 ```sh
-$ source env/bin/activate
+$ source venv/bin/activate
 $ python run.py
 ```
 Then navigate to `http://localhost:5000/` on your preferred web browser.
