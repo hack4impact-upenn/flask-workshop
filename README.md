@@ -9,7 +9,7 @@ A simple Flask application with routing and Jinja templates.
 ## Setup
 ### Clone the repository
 ```sh
-$ git clone http://hack4impact/femmehacks-flask-workshop.git
+$ git clone http://github.com/hack4impact/femmehacks-flask-workshop.git
 $ cd femmehacks-flask-workshop
 ```
 ### Install a virtual environment
