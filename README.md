@@ -2,7 +2,7 @@
 Led by Katie Jiang & Aruna Prasad from Hack4Impact.
 
 ## About
-A simple Flask application with routing and Jinja templates.
+A simple Flask application with routing and Jinja templates. Check out the corresponding slides at [www.h4i.org/femmehacks](http://h4i.org/femmehacks).
 
 ![Demo](/images/demo.png)
 
