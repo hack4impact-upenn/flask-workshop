@@ -1,6 +1,7 @@
 <html>
 <h1>ALL THE NEWBIES!!!</h1>
 
+<!-- Simple Jinja template for displaying newbie data-->
 <table>
     <thead>
         <tr>
@@ -10,6 +11,8 @@
         </tr>
     </thead>
     <tbody>
+      <!--newbies is passed to this template in views.py-->
+      <!--using a for loop since we want to display all newbies :) -->
     {% for u in newbies %}
       <tr>
         <td>{{ u.first_name }}</td>

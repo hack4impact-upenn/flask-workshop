@@ -1,9 +1,12 @@
 <html>
+<!--Some examples of basic Jinja logic. This information is passed in to the frontend
+in the route (views.py)-->
 <p>Welcome {{ name }}!</p>
 <p>
   You rated this workshop as a {{ rating }}.
 </p>
 <p>
+  <!--You can do if and else if statements in Jinja!-->
   {% if rating >= 4 %}
     Awesome! I'm glad you're enjoying this workshop!
   {% elif rating <= 2 %}
