@@ -47,4 +47,4 @@ def add_newbies():
         db.session.commit()
         return redirect('/newbies')
     # Here we specify which template to be rendered and the form we want to use
-    return render_template('new_newbie.html', form=form)
+    return render_template('add_newbie.html', form=form)

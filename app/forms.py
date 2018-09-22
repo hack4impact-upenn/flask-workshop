@@ -10,7 +10,7 @@ class AddNewbieForm(FlaskForm):
     # first_name is the property name in our form
     # In the template with this form, we can render this field by calling {{ form.first_name }}
     first_name = StringField(
-        'First name",
+        'First name',
         # The label displayed for this field would be 'First name'
         validators=[InputRequired(), Length(1, 64)])
         # Flask-WTF gives us validators to make sure the user has good input

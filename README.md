@@ -73,7 +73,7 @@ Then navigate to `http://localhost:5000/` on your preferred web browser.
 2. Now that you've added a new column to `Newbies`, you'll need to change the form so that `fave_snack` can be inputed as well.
    * Add a `StringField` called `fave_snack` to `AddNewbieForm` in `forms.py`.
 3. Next, you need to update the frontend for the form so that a user can actually input this new information.
-   * In `new_newbie.html`, render the new field you just added to `AddNewbieForm`.
+   * In `add_newbie.html`, render the new field you just added to `AddNewbieForm`.
 4. This additional information needs to be added to the database once a user submits the form.
    * Edit `add_newbies()` in `views.py` to also include the new `fave_snack` data.
 5. Display this new information.
