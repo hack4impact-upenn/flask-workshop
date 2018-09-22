@@ -27,7 +27,6 @@ def view_newbies():
 def add_newbies():
     form = AddNewbieForm()
     if form.validate_on_submit():
-        print('test')
         newbie = Newbie(
             first_name=form.first_name.data,
             last_name=form.last_name.data,

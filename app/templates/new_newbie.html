@@ -1,12 +1,20 @@
 <html>
 <h1>Add a newbie!</h1>
-<form action="/newbies/add" method="POST">
-  First name:<br>
-  <input type="text" name="first_name" required><br>
-  Last name:<br>
-  <input type="text" name="last_name" required><br>
-  Year:<br>
-  <input type="number" name="year" required><br>
-  <input type="submit" value="Submit">
+<form action="" method="POST">
+    {{ form.csrf_token }}
+    <p>
+        <b>{{ form.first_name.label }}</b><br />
+        {{ form.first_name }}
+    </p>
+    <p>
+        <b>{{ form.last_name.label }}</b><br />
+        {{ form.last_name }}
+    </p>
+    <p>
+        <b>{{ form.year.label }}</b><br />
+        {{ form.year }}
+    </p>
+    {{ form.submit }}
 </form>
+<a href="/newbies">Back</a>
 </html>
