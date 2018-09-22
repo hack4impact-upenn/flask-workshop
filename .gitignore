@@ -1,3 +1,6 @@
-app/__pycache__
+app/__pycache__/*
 app/flask-data.db
 venv
+env
+app/models/__pycache__/*
+*.pyc

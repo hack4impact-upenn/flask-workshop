@@ -1,0 +1,25 @@
+<html>
+<h1>ALL THE NEWBIES!!!</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for u in newbies %}
+      <tr>
+        <td>{{ u.first_name }}</td>
+        <td>{{ u.last_name }}</td>
+        <td>{{ u.year }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<a href="/newbies/add">Add a newbie here!</a>
+
+</html>
