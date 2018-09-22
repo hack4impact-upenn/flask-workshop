@@ -11,6 +11,7 @@ def index():
     return render_template('index.html')
 
 
+# We can allow the user/client to give us data through the route.
 @app.route("/<name>/<int:rating>", methods=['GET'])
 def welcome(name, rating):
     return render_template('welcome.html', name=name, rating=rating)
@@ -25,6 +26,8 @@ def view_newbies():
     return render_template('newbies.html', newbies=newbies)
 
 
+# Note that in methods we also added 'POST'. This allows the client to send info
+# back to the server.
 @app.route("/newbies/add", methods=['GET', 'POST'])
 def add_newbies():
     """Add a new newbie."""
@@ -43,5 +46,5 @@ def add_newbies():
         # Data must be committed or it won't actually show up
         db.session.commit()
         return redirect('/newbies')
-    # Here we specify which template to be rendered ()
+    # Here we specify which template to be rendered and the form we want to use
     return render_template('new_newbie.html', form=form)

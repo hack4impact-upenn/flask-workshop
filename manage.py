@@ -6,6 +6,7 @@ from app.models import Newbie
 manager = Manager(app)
 
 
+# Run in terminal with the command: python manage.py recreate_db
 @manager.command
 def recreate_db():
     """
@@ -16,6 +17,7 @@ def recreate_db():
     db.session.commit()
 
 
+# Run in terminal with the command: python manage.py add_fake_data
 @manager.command
 def add_fake_data():
     """
