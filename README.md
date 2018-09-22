@@ -1,5 +1,4 @@
-# FemmeHacks Flask Workshop
-Led by Katie Jiang & Aruna Prasad from Hack4Impact.
+# Flask Workshop
 
 ## About
 A simple Flask application with routing and Jinja templates. Check out the corresponding slides at [www.h4i.org/femmehacks](http://h4i.org/femmehacks).
@@ -9,14 +8,16 @@ A simple Flask application with routing and Jinja templates. Check out the corre
 ## Setup
 ### Clone the repository
 ```sh
-$ git clone http://github.com/hack4impact/femmehacks-flask-workshop.git
-$ cd femmehacks-flask-workshop
+$ git clone http://github.com/hack4impact/flask-workshop.git
+$ cd flask-workshop
 ```
 If you do not have git installed on your computer, you can also download the .zip file.
 
 ### Install Python
 [Tutorial](http://docs.python-guide.org/en/latest/starting/installation/)
+
 [Another tutorial](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html)
+
 [Modifying your PATH environment variable](https://www.java.com/en/download/help/path.xml)
 
 ### Install Pip
