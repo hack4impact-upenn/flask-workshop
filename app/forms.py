@@ -23,4 +23,8 @@ class AddNewbieForm(FlaskForm):
         'Year',
         validators=[InputRequired()])
 
+    fav_snack = StringField(
+        'Favorite snack',
+        validators=[InputRequired(), Length(1, 64)])
+
     submit = SubmitField('Submit')

@@ -15,3 +15,4 @@ class Newbie(db.Model):
     first_name = db.Column(db.String)
     last_name = db.Column(db.String)
     year = db.Column(db.Integer)
+    fav_snack = db.Column(db.String)

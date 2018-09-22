@@ -39,7 +39,8 @@ def add_newbies():
         newbie = Newbie(
             first_name=form.first_name.data,
             last_name=form.last_name.data,
-            year=form.year.data
+            year=form.year.data,
+            fav_snack=form.fav_snack.data
         )
         # Add and commit the data to the database
         db.session.add(newbie)
@@ -48,3 +49,18 @@ def add_newbies():
         return redirect('/newbies')
     # Here we specify which template to be rendered and the form we want to use
     return render_template('add_newbie.html', form=form)
+
+##adding new route
+@app.route("/noonoos", methods=['GET'])
+def display_newbs():
+    return render_template('newbies.html')
+
+##adding  route that redirects to newbies
+@app.route("/newbiesf18")
+def redir_newbs():
+    return redirect('/newbies')
+
+##adding new template and route to template
+@app.route("/bootcamp", methods=['GET'])
+def display_new_page():
+    return render_template('bootcamp.html')    
