@@ -57,24 +57,24 @@ Then navigate to `http://localhost:5000/` on your preferred web browser.
 
 ## Tinkering
 1. Play around with the templates.
-  * Try changing the text, color, etc. and see what happens!
+   * Try changing the text, color, etc. and see what happens!
 2. Add new routes.
-  * Add a new route `/noonoos` in `views.py` that will render `newbies.html`.
-  * Add a new route `/newbiesf18` in `views.py` that redirects to `/newbies`.
-    * Think about how these two might be different!
+   * Add a new route `/noonoos` in `views.py` that will render `newbies.html`.
+   * Add a new route `/newbiesf18` in `views.py` that redirects to `/newbies`.
+      * Think about how these two might be different!
 3. Create a new template and a new route.
-  * Create a new template `bootcamp.html`. Put any HTML you want there (feel free to copy paste `index.html`!)
-  * Create a new route `/bootcamp` in `views.py`.
+   * Create a new template `bootcamp.html`. Put any HTML you want there (feel free to copy paste `index.html`!)
+   * Create a new route `/bootcamp` in `views.py`.
 
 ## Recording Every Newbie's Favorite Snack
 1. Add a new column to the `Newbie` model.
-  * Add a column called `fave_snack` in `newbie.py`. This should be of type `String`.
-    * Since you modified the database, you'll need to recreate the database. This can be done by running `python manage.py recreate_db`.
+   * Add a column called `fave_snack` in `newbie.py`. This should be of type `String`.
+      * Since you modified the database, you'll need to recreate the database. This can be done by running `python manage.py recreate_db`.
 2. Now that you've added a new column to `Newbies`, you'll need to change the form so that `fave_snack` can be inputed as well.
-  * Add a `StringField` called `fave_snack` to `AddNewbieForm` in `forms.py`.
+   * Add a `StringField` called `fave_snack` to `AddNewbieForm` in `forms.py`.
 3. Next, you need to update the frontend for the form so that a user can actually input this new information.
-  * In `new_newbie.html`, render the new field you just added to `AddNewbieForm`.
+   * In `new_newbie.html`, render the new field you just added to `AddNewbieForm`.
 4. This additional information needs to be added to the database once a user submits the form.
-  * Edit `add_newbies()` in `views.py` to also include the new `fave_snack` data.
+   * Edit `add_newbies()` in `views.py` to also include the new `fave_snack` data.
 5. Display this new information.
-  * Edit `newbies.html` to also display every newbie's `fave_snack` as well.
+   * Edit `newbies.html` to also display every newbie's `fave_snack` as well.
