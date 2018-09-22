@@ -1,0 +1,3 @@
+app/__pycache__
+app/flask-data.db
+venv
