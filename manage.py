@@ -18,6 +18,9 @@ def recreate_db():
 
 @manager.command
 def add_fake_data():
+    """
+    Adds fake data to the local database.
+    """
     db.session.add(Newbie(
         first_name="Katie",
         last_name="Jiang",
@@ -26,6 +29,7 @@ def add_fake_data():
         first_name="Stephanie",
         last_name="Shi",
         year=2020))
+    # TODO: Try adding your own fake data here
     db.session.commit()
 
 

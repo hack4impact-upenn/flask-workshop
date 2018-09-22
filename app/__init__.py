@@ -1,17 +1,9 @@
-### Initialize the Flask application ###
-
+"""
+Initialize the Flask application
+"""
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-
-# Import environment variables from .env file that you don't want public
-# e.g. secret keys, usernames, passwords
-if os.path.exists('.env'):
-    print('Importing environment from .env file')
-    for line in open('.env'):
-        var = line.strip().split('=')
-        if len(var) == 2:
-            os.environ[var[0]] = var[1].replace("\"", "")
 
 # Create database
 db = SQLAlchemy()
