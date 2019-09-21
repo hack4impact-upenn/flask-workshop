@@ -60,7 +60,7 @@ Then navigate to `http://localhost:5000/` on your preferred web browser.
    * Try changing the text, color, etc. and see what happens!
 2. Add new routes.
    * Add a new route `/noonoos` in `views.py` that will render `newbies.html`.
-   * Add a new route `/newbiesf18` in `views.py` that redirects to `/newbies`.
+   * Add a new route `/newbiesf19` in `views.py` that redirects to `/newbies`.
       * Think about how these two might be different!
 3. Create a new template and a new route.
    * Create a new template `bootcamp.html`. Put any HTML you want there (feel free to copy paste `index.html`!)
