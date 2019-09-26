@@ -48,6 +48,11 @@ $ python run.py
 ```
 Then navigate to `http://localhost:5000/` on your preferred web browser.
 
+## Exiting the virtual environmment
+```sh
+$ deactivate
+```
+
 ## Related resources
 * [Flask Workshop Slides](https://docs.google.com/presentation/d/1dbVouOH3zPJ6qISXl_Wzu1y4d9quf17YDtIX9eNoMMg/edit#slide=id.g32b928dd89_0_0)
 * [Flask-Base](http://github.com/hack4impact/flask-base) is a simple Flask boilerplate app with SQLAlchemy, Redis, User Authentication, and more. Check out our [documentation](http://hack4impact.github.io/flask-base) as well!
