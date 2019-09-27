@@ -1,4 +1,9 @@
 <html>
+<head>
+  <!-- Import JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
 <h1>ALL THE NEWBIES!!!</h1>
 
 <!-- Simple Jinja template for displaying newbie data-->
@@ -18,9 +23,10 @@
         <td>{{ u.first_name }}</td>
         <td>{{ u.last_name }}</td>
         <td>{{ u.year }}</td>
-        <td><button href="{{ url_for('delete_newbie', newbie_id=u.id) }}">Delete</button></td>
-        <td>{{ u.id }}</td>
-        <td>{{ url_for('delete_newbie', newbie_id=u.id) }}</td>
+        <td>
+          <!-- Clicking on the button calls the deleteNewbie Javascript function -->
+          <button onclick="deleteNewbie({{ u.id }})">Delete</button>
+        </td>
       </tr>
     {% endfor %}
   </tbody>
@@ -28,4 +34,20 @@
 
 <a href="/newbies/add">Add a newbie here!</a>
 
+<script>
+function deleteNewbie(newbie_id) {
+  // Make a DELETE request to the following URL
+  $.ajax({
+      url: `/newbies/${newbie_id}`,
+      type: 'DELETE',
+      success: function(response) {
+      // Print the response in the browser console
+      console.log(response)
+      // Refresh the page
+      document.location.reload()
+    },
+  })
+}
+</script>
+</body>
 </html>

@@ -1,4 +1,4 @@
-from flask import redirect, render_template
+from flask import jsonify, redirect, render_template
 from app import app
 
 from . import db
@@ -25,14 +25,14 @@ def view_newbies():
     # Pass it to the frontend
     return render_template('newbies.html', newbies=newbies)
 
-@app.route("/newbies/delete/<int:newbie_id>", methods=['GET'])
+@app.route("/newbies/<int:newbie_id>", methods=['DELETE'])
 def delete_newbie(newbie_id):
     """Delete newbie."""
     newbie = Newbie.query.get(newbie_id)
     if newbie is not None:
         db.session.delete(newbie)
         db.session.commit()
-    return redirect('/newbies')
+    return jsonify({'success': True})
 
 # Note that in methods we also added 'POST'. This allows the client to send info
 # back to the server.
