@@ -8,8 +8,8 @@ A simple Flask application with routing and Jinja templates. Accompanying slides
 ## Setup
 ### Clone the repository
 ```sh
-$ git clone http://github.com/hack4impact/flask-workshop.git
-$ cd flask-workshop
+git clone http://github.com/hack4impact/flask-workshop.git
+cd flask-workshop
 ```
 If you do not have git installed on your computer, you can also download the .zip file.
 
@@ -25,32 +25,32 @@ If you do not have pip already installed on your computer, follow [this tutorial
 
 ### Install a virtual environment
 ```sh
-$ pip install virtualenv
-$ virtualenv -p python3 venv
-$ source venv/bin/activate
+pip install virtualenv
+virtualenv -p python3 venv
+source venv/bin/activate
 ```
 
 ### Install dependencies
 ```sh
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Creating the database
 ```sh
-$ python manage.py recreate_db
-$ python manage.py add_fake_data
+python manage.py recreate_db
+python manage.py add_fake_data
 ```
 
 ## Running the application
 ```sh
-$ source venv/bin/activate
-$ python run.py
+source venv/bin/activate
+python run.py
 ```
 Then navigate to `http://localhost:5000/` on your preferred web browser.
 
 ## Exiting the virtual environmment
 ```sh
-$ deactivate
+deactivate
 ```
 
 ## Related resources
@@ -83,3 +83,10 @@ $ deactivate
    * Edit `add_newbies()` in `views.py` to also include the new `fave_snack` data.
 5. Display this new information.
    * Edit `newbies.html` to also display every newbie's `fave_snack` as well.
+
+## Database Workshop
+Learn about one-to-many and many-to-many relationships in the database-workshop branch by following [this guide](https://github.com/hack4impact/flask-workshop/blob/database-workshop/database-workshop.md). To view the example code:
+```
+git pull
+git checkout database-workshop
+```
