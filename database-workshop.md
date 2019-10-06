@@ -287,3 +287,11 @@ Now run the following command in terminal with your virtual environment activate
 python manage.py add_fake_data
 ```
 You should be able see the fake data you generated in `app/flask-data.db` using [DB Browser for SQLite](https://sqlitebrowser.org/).
+
+---
+
+## Additional Resources
+
+* [Database Guide by Katie](https://github.com/hack4impact/wiki/blob/master/tech/databases/databases.md)
+* [Database Office Hours Slides by Abhi](https://github.com/hack4impact/wiki/blob/master/tech/databases/databases-slides.pdf)
+* [SQLAlchemy's Basic Relationship Patterns](https://docs.sqlalchemy.org/en/13/orm/basic_relationships.html)
