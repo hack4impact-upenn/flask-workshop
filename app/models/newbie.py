@@ -1,5 +1,14 @@
 from .. import db
 
+newbies_to_snacks = db.Table('newbies_to_snacks',
+    db.Column('newbie_id',
+        db.ForeignKey('newbies.id'),
+        primary_key=True),
+    db.Column('snack_id',
+        db.ForeignKey('snacks.id'),
+        primary_key=True)
+)
+
 class Newbie(db.Model):
     """
     Database model for our Newbie class
@@ -17,24 +26,25 @@ class Newbie(db.Model):
     year = db.Column(db.Integer)
     # This defines a one-to-many relationship with the Oldie class
     mentor_id = db.Column(db.Integer, db.ForeignKey('oldies.id'), nullable=True)
+    favorite_snacks = db.relationship('Snack',
+        secondary=newbies_to_snacks,
+        backref=db.backref('newbies_to_snacks'),
+        lazy='dynamic')
 
     @staticmethod
     def generate_fake():
         christina = Newbie(
             first_name='Christina',
             last_name='Lu',
-            year=2022
-        )
+            year=2022)
         lisa = Newbie(
             first_name='Lisa',
             last_name='Moshiro',
-            year=2022
-        )
+            year=2022)
         robin = Newbie(
             first_name='Robin',
             last_name='Tan',
-            year=2022
-        )
+            year=2022)
         
         for newbie in [christina, lisa, robin]:
             db.session.add(newbie)

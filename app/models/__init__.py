@@ -3,3 +3,4 @@
 
 from .newbie import *
 from .oldie import *
+from .snack import *
