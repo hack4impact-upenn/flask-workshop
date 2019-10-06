@@ -1,7 +1,7 @@
 from flask_script import Manager
 
 from app import app, db
-from app.models import Newbie
+from app.models import Newbie, Oldie
 
 manager = Manager(app)
 
@@ -23,15 +23,16 @@ def add_fake_data():
     """
     Adds fake data to the local database.
     """
-    db.session.add(Newbie(
-        first_name="Katie",
-        last_name="Jiang",
-        year=2020))
-    db.session.add(Newbie(
-        first_name="Stephanie",
-        last_name="Shi",
-        year=2020))
-    # TODO: Try adding your own fake data here
+    # Create some oldies and newbies
+    Oldie.generate_fake()
+    Newbie.generate_fake()
+
+    # Randomly assign each newbie an oldie mentor
+    import random
+    oldies = Oldie.query.all()
+    for newbie in Newbie.query.all():
+        newbie.mentor = random.choice(oldies)
+        db.session.add(newbie)
     db.session.commit()
 
 

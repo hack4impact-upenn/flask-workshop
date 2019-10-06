@@ -2,3 +2,4 @@
 # This allows other parts of the application to access these models.
 
 from .newbie import *
+from .oldie import *
