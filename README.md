@@ -84,7 +84,7 @@ deactivate
 5. Display this new information.
    * Edit `newbies.html` to also display every newbie's `fave_snack` as well.
 
-## Database Workshop
+## Database Relationships Workshop
 Learn about one-to-many and many-to-many relationships in the database-workshop branch by following [this guide](https://github.com/hack4impact/flask-workshop/blob/database-workshop/database-workshop.md). To view the example code:
 ```
 git pull
